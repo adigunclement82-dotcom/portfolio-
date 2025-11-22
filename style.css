@@ -56,11 +56,11 @@ body {
 
 .theme-toggle {
     background: transparent;
-    border: 2px solid white;
+    border: 2px solid black;
     padding: 8px 14px;
     border-radius: 50%;
     cursor: pointer;
-    color: white;
+    color: orangered;
     font-size: 25px;
     transition: 0.3s ease;
     position: fixed;
@@ -554,7 +554,7 @@ body.dark .theme-toggle {
     }
     .theme-toggle {
         position: absolute;
-        left: 750px;
+        left: 900px;
         top: 1px;
     }
 
@@ -593,6 +593,11 @@ body.dark .theme-toggle {
         height: auto;
         gap: 10px;
         position: relative;
+    }
+    .hero {
+        background-size: 100% 100% !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
     }
     .theme-toggle {
         position: fixed;
@@ -742,6 +747,13 @@ body.dark .theme-toggle {
 
 /* SMALL PHONES (below 480px) */
 @media ( max-width: 480px) {
+    .hero {
+        background-size: 100% 100% !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
+
+
     .theme-toggle {
         position: fixed;
         left: 400px;
