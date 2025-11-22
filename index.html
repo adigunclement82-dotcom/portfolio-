@@ -1,0 +1,327 @@
+<!-- KLEM TECH Portfolio - HTML File -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KLEM TECH Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo-area">
+            <img src="Icons/klemtech.png" alt="KLEM TECH Logo" class="brand-logo">
+            <h1 class="brand-name"><span class="klem">KLEM</span> <span class="tech">TECH</span></h1>
+        </div>
+        <div class="ecom">
+            <h1 class="nuel">ECOM-NUEL AGENCY</h1>
+        </div>
+
+        <nav class="nav-icons">
+            <a href="#home" class="nav-item" title="Home">
+                <i class="bi bi-house-door"></i><span>Home</span>
+            </a>
+            <a href="#about" class="nav-item" title="About Me">
+                <i class="bi bi-file-person"></i><span>About Me</span>
+            </a>
+            <a href="#services" class="nav-item" title="What I Can Offer">
+                <i class="bi bi-laptop"></i><span>What I Can Offer</span>
+            </a>
+            <a href="#projects" class="nav-item" title="Recent Projects">
+                <i class="bi bi-briefcase-fill"></i><span>Recent Projects</span>
+            </a>
+            <a href="#social" class="nav-item" title="Social Media Profiles">
+                <i class="bi bi-telephone-fill"></i><span>Social Profiles</span>
+            </a>
+            <!-- <a href="#team" class="nav-item" title="Other Team Members">
+                <i class="icon">👥</i><span>Team</span>
+            </a> -->
+        </nav>
+        <button class="theme-toggle" onclick="toggleTheme()">
+            <i class="bi bi-moon-fill"></i>
+        </button>
+    </header>
+
+    <!-- MARQUEE -->
+    <div class="marquee">
+        <marquee behavior="scroll" direction="left">
+            <h3>Hi Friend, Welcome to my Page. Welcome to Ecom-nuel Agency</h3>
+        </marquee>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h2 class="text">I Build High-Converting Shopify Stores <br>and Craft Modern Digital Experiences <br>That
+                Grow Brands</h2>
+            <div class="orbit-btn">
+                <a href="#services" class="cta-btn">Let's Explore Together</a>
+                <span class="orbit-ring"></span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <img src="assets/profile picture.jpg" class="about-photo" alt="About Me Photo" />
+            <div class="about-text">
+                <h2 class="me">About Me</h2>
+                <br>
+                <p>
+                    First of all, i appreciate you taking your time to review my webpage. My name is <strong id="adigun">ADIGUN CLEMENT</strong> and
+                    my brand name is KlemTech,
+                    which i coined from the name "clement". I am from west africa and i am a graduate of Babcock
+                    University in West Africa,
+                    having bagged a degree in Computer Science. I am currently about to further my education in Canada
+                    to earn a master degree.
+                    <br>
+                    <br>
+
+                    I started my tech journey with codeverse hub in 2020, where i learnt frontend development and how to
+                    build a clean, good and responsive websites
+                    using languages like html, css, javascript, react and others. I then furthered my tech journey with
+                    the ECOM-NUEL AGENCY where i was exposed to shopify
+                    and so far it has been stressful wonderful experience and so far we have been xto able to work with
+                    diferent clients across the globe
+                    and we have sucessfully shaped thier brand to be able to survive in today's competitive ecommerce
+                    space.
+                    <br>
+                    <br>
+
+                    I am a passionate eCommerce & tech professional dedicated to building
+                    fast, scalable and visually stunning digital experiences. With
+                    expertise in Shopify, frontend engineering, performance optimization
+                    and UX, my goal is to help entrepreneurs and brands achieve real growth.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="services">
+        <h2>What I can offer</h2>
+
+        <div class="cards">
+
+            <!-- ========================= ROW 1 ========================= -->
+            <div class="row1">
+
+                <!-- CARD 1 -->
+                <div class="card">
+                    <div class="card-img" style="background-image: url('assets/card1.jpg');">
+                        <div class="card-hover">
+                            <a href="#" class="hover-btn">View My Project</a>
+                        </div>
+                        <span class="card-title">Shopify Store Design & Conversion Optimization</span>
+                    </div>
+                    <a href="#" class="view-btn">
+                        <p>Through data-driven optimization, seamless UX, and conversion-focused layouts,
+                            I help brands turn visitors into loyal customers.</p>
+                    </a>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="card">
+                    <div class="card-img" style="background-image: url('assets/pic2.jpg');">
+                        <div class="card-hover">
+                            <a href="#" class="hover-btn">View My Project</a>
+                        </div>
+                        <span class="card-title">Frontend Engineering & Interactive UI Development</span>
+                    </div>
+                    <a href="#" class="view-btn">
+                        <p>I build fast, responsive, and pixel-perfect web interfaces using modern frontend
+                            technologies.
+                            From animations to dynamic components, every interaction is crafted for smooth user
+                            experiences.</p>
+                    </a>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="card">
+                    <div class="card-img" style="background-image: url('assets/card3.jpg');">
+                        <div class="card-hover">
+                            <a href="#" class="hover-btn">View My Project</a>
+                        </div>
+                        <span class="card-title">Search Engine Optimization & Performance Growth</span>
+                    </div>
+                    <a href="#" class="view-btn">
+                        <p>I improve website visibility with clean SEO structure, optimized content, and performance
+                            enhancements.</p>
+                    </a>
+                </div>
+
+            </div>
+            <!-- END ROW 1 -->
+
+
+
+            <!-- ========================= ROW 2 ========================= -->
+            <div class="row2">
+
+                <!-- CARD 4 -->
+                <div class="card">
+                    <div class="card-img" style="background-image: url('assets/pic4.jpg');">
+                        <div class="card-hover">
+                            <a href="#" class="hover-btn">View My Project</a>
+                        </div>
+                        <span class="card-title">User Interface & Experience Design</span>
+                    </div>
+                    <a href="#" class="view-btn">
+                        <p>I design intuitive user interfaces that balance beauty, clarity, and functionality.</p>
+                    </a>
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="card">
+                    <div class="card-img" style="background-image: url('assets/card5.jpg');">
+                        <div class="card-hover">
+                            <a href="#" class="hover-btn">View My Project</a>
+                        </div>
+                        <span class="card-title">Google Search Console Management & Performance</span>
+                    </div>
+                    <a href="#" class="view-btn">
+                        <p>I monitor and optimize site health to improve indexing, visibility, ranking, and site
+                            performance.</p>
+                    </a>
+                </div>
+
+                <!-- CARD 6 -->
+                <div class="card">
+                    <div class="card-img" style="background-image: url('assets/card6.jpg');">
+                        <div class="card-hover">
+                            <a href="#" class="hover-btn">View My Project</a>
+                        </div>
+                        <span class="card-title">Shopify Technical Support & Issue Resolution</span>
+                    </div>
+                    <a href="#" class="view-btn">
+                        <p>I fix bugs, theme issues, app conflicts, and checkout errors to keep stores running smoothly.
+                        </p>
+                    </a>
+                </div>
+
+            </div>
+            <!-- END ROW 2 -->
+
+        </div>
+
+        </section>
+
+        <!-- SOCIAL SECTION -->
+        <section id="social" class="social">
+            <h2>Connect With Us</h2>
+            <br>
+            <br>
+            <div class="social-icons">
+                <i class="bi bi-linkedin"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-whatsapp"></i>
+                <i class="bi bi-twitter-x"></i>
+                <i class="bi bi-instagram"></i>
+            </div>
+        </section>
+
+        <!-- CLIENT REVIEWS -->
+        <section id="reviews" class="reviews">
+            <h2>Client Reviews</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <!-- <img src="assets/client1.jpg" class="client-photo" alt="Client 1" /> -->
+                    <p>"Amazing service! My store conversion rate increased massively."</p>
+                    <div class="stars">⭐⭐⭐</div>
+                </div>
+                <div class="review-card">
+                    <!-- <img src="assets/client2.jpg" class="client-photo" alt="Client 2" /> -->
+                    <p>"Professional, fast and very skillful. Highly recommended!"</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="review-card">
+                    <!-- <img src="assets/client3.jpg" class="client-photo" alt="Client 3" /> -->
+                    <p>"Understood my vision and executed perfectly."</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="review-card">
+                    <!-- <img src="assets/client4.jpg" class="client-photo" alt="Client 4" /> -->
+                    <p>"Delivered more than expected. Great communication."</p>
+                    <div class="stars">⭐⭐⭐⭐</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+        </footer>
+        <footer class="ocean-footer">
+            <div class="wave wave1"></div>
+            <!-- <div class="wave wave2"></div>
+    <div class="wave wave3"></div> -->
+
+            <p class="footer-text">© 2025 KLEM TECH. All Rights Reserved.</p>
+        </footer>
+        <script>function toggleTheme() {
+                document.body.classList.toggle("dark");
+
+                // save theme
+                if (document.body.classList.contains("dark")) {
+                    localStorage.setItem("theme", "dark");
+                } else {
+                    localStorage.setItem("theme", "light");
+                }
+            }
+
+            // load saved theme
+            window.onload = () => {
+                const saved = localStorage.getItem("theme");
+                if (saved === "dark") {
+                    document.body.classList.add("dark");
+                }
+            };
+        </script>
+        <script>
+  const nameToType = "Adigun Clement";  // your name
+  const typingEl = document.getElementById("adigun");
+
+  let index = 0;
+  let typing = true;
+
+  function typeAnimation() {
+    if (typing) {
+      typingEl.textContent = nameToType.substring(0, index++);
+      if (index > nameToType.length) {
+        typing = false;
+        setTimeout(typeAnimation, 2000); // pause before deleting
+        return;
+      }
+    } else {
+      typingEl.textContent = nameToType.substring(0, index--);
+      if (index < 0) {
+        typing = true;
+        setTimeout(typeAnimation, 2000); // pause before typing again
+        return;
+      }
+    }
+
+    setTimeout(typeAnimation, 70); // typing speed
+  }
+
+  // run loop every 3 seconds
+  setInterval(() => {
+    index = 0;
+    typing = true;
+    typeAnimation();
+  }, 3000);
+
+  // start immediately
+  typeAnimation();
+</script>
+
+</body>
+
+</html>
