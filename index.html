@@ -285,7 +285,7 @@
             };
         </script>
         <script>
-  const nameToType = "Adigun Clement";  // your name
+  const nameToType = "Adigun Clement";
   const typingEl = document.getElementById("adigun");
 
   let index = 0;
@@ -294,32 +294,28 @@
   function typeAnimation() {
     if (typing) {
       typingEl.textContent = nameToType.substring(0, index++);
+      
+      // Finished typing → switch to deleting after pause
       if (index > nameToType.length) {
         typing = false;
-        setTimeout(typeAnimation, 2000); // pause before deleting
+        setTimeout(typeAnimation, 1200); // pause before deleting
         return;
       }
     } else {
       typingEl.textContent = nameToType.substring(0, index--);
+
+      // Finished deleting → switch back to typing after pause
       if (index < 0) {
         typing = true;
-        setTimeout(typeAnimation, 2000); // pause before typing again
+        setTimeout(typeAnimation, 800); // pause before typing again
         return;
       }
     }
 
-    setTimeout(typeAnimation, 70); // typing speed
+    setTimeout(typeAnimation, 150); // SLOW typing speed
   }
 
-  // run loop every 3 seconds
-  setInterval(() => {
-    index = 0;
-    typing = true;
-    typeAnimation();
-  }, 3000);
-
-  // start immediately
-  typeAnimation();
+  typeAnimation(); // start animation
 </script>
 
 </body>
