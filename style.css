@@ -152,6 +152,8 @@ body.dark .theme-toggle {
     background-position: center;
     position: relative;
     animation: bgSwap 5s infinite;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 
 }
 .hero-content {
@@ -774,7 +776,8 @@ body.dark .theme-toggle {
     }
     .view-btn {
         height: 100%;
-        background-color: black;
+        background-color: var(--header-bg); /* keeps orangered in light mode */
+        color: white; 
     }
     .social-icons {
         display: flex;
