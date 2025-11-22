@@ -64,6 +64,8 @@ body {
     font-size: 25px;
     transition: 0.3s ease;
     position: fixed;
+    left: 80rem;
+    top: 35rem;
 }
 
 body.dark .theme-toggle {
@@ -540,7 +542,7 @@ body.dark .theme-toggle {
    RESPONSIVE DESIGN (MOBILE + TABLET)
    ============================================ */
 
-@media (max-width: 992px) {
+@media (max-width: 846px) {
     /* HEADER */
     .header {
         flex-direction: column;
@@ -549,9 +551,9 @@ body.dark .theme-toggle {
         gap: 15px;
     }
     .theme-toggle {
-        position: fixed;
+        position: absolute;
         left: 750px;
-        top: 420px;
+        top: 1px;
     }
 
 
@@ -629,13 +631,6 @@ body.dark .theme-toggle {
         top: 400px;
         font-size: 16px;
         padding: 10px 18px;
-    }
-    .card {
-        background: var(--card-bg);
-    color: var(--text);
-    }
-    .view-btn {
-        background-color: black;
     }
 
     .orbit-btn {
@@ -758,10 +753,6 @@ body.dark .theme-toggle {
         text-align: center; */
         top: 250px;
 
-    }
-    .card {
-        background: var(--card-bg);
-    color: var(--text);
     }
 
     .cta-btn {
